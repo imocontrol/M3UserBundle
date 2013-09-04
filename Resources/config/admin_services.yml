@@ -1,0 +1,21 @@
+services:
+  sonata.user.admin.user:
+  sonata.user.admin.group:
+  imocontrol.system_user:
+      class: %imocontrol.user.admin.class%
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Systemusers, label_catalogue: default, label: system_users, persist_filters: true }
+      arguments: [null, %imocontrol.user.admin.entity.class%, %imocontrol.user.admin.controller.class%]
+      calls:
+        - [setSecurityContext, [@security.context]]
+        - [setTranslationDomain, [%imocontrol.user.admin.translation%]]
+        - [setUserManager, [@fos_user.user_manager]]
+  imocontrol.system_user_group:
+      class: %imocontrol.user_group.admin.class%
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Systemusers, label_catalogue: default, label: system_user_groups, persist_filters: true }
+      arguments: [null, %imocontrol.user_group.admin.entity.class%, %imocontrol.user_group.admin.controller.class%]
+      calls:
+        - [setSecurityContext, [@security.context]]
+        - [setTranslationDomain, [%imocontrol.user_group.admin.translation%]]
+

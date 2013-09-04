@@ -1,0 +1,38 @@
+{
+    "name": "imocontrol/m3-user-bundle",
+    "type": "symfony-bundle",
+    "description": "Core bundle of the iMOControl based on the FOSUserBundle and extends the SonataUserBundle.",
+    "keywords": ["m3 user bundle", "imocontrol", "corebundle", "m3byte", "sonata admin extension"],
+    "homepage": "http://www.imocontrol.net",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Ofner",
+            "email": "michael@m3byte.com",
+            "homepage": "http://imocontrol.net"
+        },
+        {
+            "name": "M3Byte Opensource Lab",
+            "homepage": "https://github.com/imocontrol/M3UserBundle/contributors"
+        }
+    ],
+    "require": {
+        "friendsofsymfony/user-bundle": "1.3.*",
+        "sonata-project/user-bundle": "2.2.x-dev"
+    },
+    "require-dev": {
+        
+    },
+    "suggest": {
+        
+    },
+    "autoload": {
+        "psr-0": { "IMOControl\\M3\\CustomerBundle\\": "" }
+    },
+    "target-dir": "IMOControl/M3/UserBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
