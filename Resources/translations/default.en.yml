@@ -1,0 +1,8 @@
+Systemusers: Systemusers
+system_users: Users
+system_user_groups: Usergroups
+
+# Profile translations
+gender_male: Male
+gender_female: Female
+gender_unknown: Unknown

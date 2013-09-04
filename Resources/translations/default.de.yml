@@ -1,4 +1,6 @@
-SystemUsers: Systembenutzer
+Systemusers: Systembenutzer
+system_users: Benutzer
+system_user_groups: Benutzergruppen
 
 # Profile translations
 gender_male: Herr
